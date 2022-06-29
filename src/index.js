@@ -1,15 +1,17 @@
 // ОБЩАЯ ЛОГИКА
 import readlineSync from 'readline-sync';
+import { isEven } from '/home/leepoch/frontend-project-lvl1/games/brain-even.js';
 
 const numberOfRounds = 3; 
-export const generalLogic = (conditions, rightAnswer, questionInGame) => {
+export const generalLogic = (rules) => {
     console.log('Welcome to the Brain Games!')
-    const name = readlineSync.question('May I have your name?');
-    console.log(`Hello, ${name}!`);
-    console.log(conditions)
+    const name = readlineSync.question('May I have your name? ')
+    console.log(`Hello, ${name}!`)
+    console.log(rules)
 
     for (let i = 0; i < numberOfRounds; i += 1) {
-        console.log(`Question: ${questionInGame}`)
+        const [rightAnswer, task] = isEven();
+        console.log(`Question: ${task}`)
         const userAnswer = readlineSync.question('Your answer: ');
         if (userAnswer === rightAnswer) {
             console.log('Correct!')
