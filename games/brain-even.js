@@ -2,16 +2,13 @@
 import { randomNum } from '/home/leepoch/frontend-project-lvl1/src/utils.js';
 import { generalLogic } from '/home/leepoch/frontend-project-lvl1/src/index.js';
 
-const parityQuestion = () => {
-    let rightAnswer = '';
-    let questionInGame = randomNum(20)
-    if (questionInGame % 2 === 0) {
-        rightAnswer = 'yes'
+export const isEven = () => {
+    const arrayOfrightAnswerAndTask = ['', randomNum(20)]
+    if (arrayOfrightAnswerAndTask[1] % 2 === 0) {
+        arrayOfrightAnswerAndTask[0] = 'yes'
     } else {
-        rightAnswer = 'no'
+        arrayOfrightAnswerAndTask[0] = 'no'
     }
-    generalLogic('Answer "yes" if the number is even, otherwise answer "no".', rightAnswer, questionInGame);
+    return arrayOfrightAnswerAndTask
 }
-parityQuestion()
-
-export default parityQuestion;
+generalLogic('Answer "yes" if the number is even, otherwise answer "no".')
