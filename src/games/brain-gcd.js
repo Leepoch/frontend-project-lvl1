@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-import generalLogic from '/home/leepoch/frontend-project-lvl1/src/index.js';
-import randomNum from '/home/leepoch/frontend-project-lvl1/src/utils.js';
+import randomNum from '../utils.js';
+import generalLogic from '../index.js';
 
 const rules = 'Find the greatest common divisor of given numbers.';
 const gcdGame = () => {
