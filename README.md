@@ -4,7 +4,6 @@
 
 This is a project of several thinking games.
 
-
 How to install
 
 1. Clone this repository

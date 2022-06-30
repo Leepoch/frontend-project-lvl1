@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import greeting from '/home/leepoch/frontend-project-lvl1/src/cli.js';
+import greeting from '../src/cli.js';
 
 greeting();

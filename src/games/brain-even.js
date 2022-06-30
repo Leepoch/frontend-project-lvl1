@@ -1,6 +1,7 @@
 #!/usr/bin/env node
-import randomNum from '/home/leepoch/frontend-project-lvl1/src/utils.js';
-import generalLogic from '/home/leepoch/frontend-project-lvl1/src/index.js';
+import randomNum from '../utils.js';
+import generalLogic from '../index.js';
+
 
 const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
 const isEven = () => {
