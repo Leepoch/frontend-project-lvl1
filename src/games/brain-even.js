@@ -2,7 +2,6 @@
 import randomNum from '../utils.js';
 import generalLogic from '../index.js';
 
-
 const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
 const isEven = () => {
   const arrayOfrightAnswerAndTask = ['', randomNum(0, 20)];
