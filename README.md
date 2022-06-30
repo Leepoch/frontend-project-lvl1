@@ -12,4 +12,4 @@ Gcd-game
 [![asciicast](https://asciinema.org/a/mF1IA1VBP56onYv9dLOX7rDJJ.svg)](https://asciinema.org/a/mF1IA1VBP56onYv9dLOX7rDJJ)
 
 Progression-game
-[![asciicast](https://asciinema.org/a/DnkfitkzNYWZACyjZNe4NGpeR.svg)](https://asciinema.org/a/DnkfitkzNYWZACyjZNe4NGpeR)
+[![asciicast](https://asciinema.org/a/E8o1MZarEkjvG1zJuW7f5ImK7.svg)](https://asciinema.org/a/E8o1MZarEkjvG1zJuW7f5ImK7)
