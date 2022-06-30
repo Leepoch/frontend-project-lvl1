@@ -14,7 +14,7 @@ const gameProgression = () => {
   }
   const randomNumOfArray = randomNum(0, lengthOfArray);
   const rightAnswer = arrOfNumbers[randomNumOfArray];
-  arrOfNumbers[randomNumOfArray] = '...';
+  arrOfNumbers[randomNumOfArray] = '..';
   const arrForReturn = [rightAnswer, arrOfNumbers.join([' '])];
   return arrForReturn;
 };
