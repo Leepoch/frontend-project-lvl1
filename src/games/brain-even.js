@@ -2,14 +2,18 @@
 import randomNum from '../utils.js';
 import generalLogic from '../index.js';
 
-const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
-const isEven = () => {
-  const arrayOfrightAnswerAndTask = ['', randomNum(0, 20)];
-  if (arrayOfrightAnswerAndTask[1] % 2 === 0) {
-    arrayOfrightAnswerAndTask[0] = 'yes';
-  } else {
-    arrayOfrightAnswerAndTask[0] = 'no';
+const rule = 'Answer "yes" if the number is even, otherwise answer "no".';
+const isEven = (num) => {
+  if (num % 2 === 0) {
+    return true;
   }
-  return arrayOfrightAnswerAndTask;
+  return false;
 };
-generalLogic(isEven, rules);
+
+const evenGameRound = () => {
+  const num = randomNum(1, 20);
+  const task = num;
+  const rightAnswer = (isEven(num)) ? 'yes' : 'no';
+  return [rightAnswer, task];
+};
+generalLogic(evenGameRound, rule);
