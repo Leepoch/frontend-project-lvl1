@@ -3,17 +3,13 @@ import generalLogic from '../index.js';
 
 const rule = 'What is the result of the expression?';
 const calculatedRightAnswer = (num1, num2, randomSign) => {
-  let rightAnswer = 0;
   switch (randomSign) {
     case '+':
-      rightAnswer = num1 + num2;
-      return rightAnswer;
+      return num1 + num2;
     case '-':
-      rightAnswer = num1 - num2;
-      return rightAnswer;
+      return num1 - num2;
     case '*':
-      rightAnswer = num1 * num2;
-      return rightAnswer;
+      return num1 * num2;
     default:
       return null;
   }
