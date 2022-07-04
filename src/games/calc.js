@@ -16,7 +16,7 @@ const calculatedRightAnswer = (num1, num2, randomSign) => {
 };
 const calcGameRound = () => {
   const sings = ['+', '-', '*'];
-  const randomSign = sings[randomNum(0, 2)];
+  const randomSign = sings[randomNum(0, sings.length - 1)];
   const num1 = randomNum(0, 20);
   const num2 = randomNum(0, 20);
   const task = `${num1} ${randomSign} ${num2}`;

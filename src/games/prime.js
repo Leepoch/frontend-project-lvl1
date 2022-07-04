@@ -19,9 +19,8 @@ const isPrime = (num) => {
 
 const primeGameRound = () => {
   const num = randomNum(1, 20);
-  const task = num;
   const rightAnswer = (isPrime(num)) ? 'yes' : 'no';
-  return [rightAnswer, task];
+  return [rightAnswer, num];
 };
 const startGame = () => generalLogic(primeGameRound, rule);
 export default startGame;

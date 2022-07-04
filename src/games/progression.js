@@ -2,25 +2,25 @@ import randomNum from '../utils.js';
 import generalLogic from '../index.js';
 
 const rule = 'What number is missing in the progression?';
-const getProgresion = (arrayLength, number, progressionMultiplier) => {
-  const numbers = [];
-  let num = number;
-  for (let i = 0; i < arrayLength; i += 1) {
-    numbers.push(num);
-    num += progressionMultiplier;
+const getProgresion = (progressionLength, first, stepProgression) => {
+  const progression = [];
+  let num = first;
+  for (let i = 0; i < progressionLength; i += 1) {
+    progression.push(num);
+    num += stepProgression;
   }
-  return numbers;
+  return progression;
 };
 
 const progressionGameRound = () => {
-  const progressionMultiplier = randomNum(1, 6);
-  const arrayLength = randomNum(5, 11);
-  const number = randomNum(1, 20);
-  const numbers = getProgresion(arrayLength, number, progressionMultiplier);
-  const randomNumOfArray = randomNum(0, arrayLength);
-  const rightAnswer = String(numbers[randomNumOfArray]);
-  numbers[randomNumOfArray] = '..';
-  return [rightAnswer, numbers.join([' '])];
+  const stepProgression = randomNum(1, 6);
+  const progressionLength = randomNum(5, 11);
+  const first = randomNum(1, 20);
+  const progression = getProgresion(progressionLength, first, stepProgression);
+  const index = randomNum(0, progressionLength - 1);
+  const rightAnswer = String(progression[index]);
+  progression[index] = '..';
+  return [rightAnswer, progression.join([' '])];
 };
 const startGame = () => generalLogic(progressionGameRound, rule);
 export default startGame;

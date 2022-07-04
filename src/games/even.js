@@ -11,9 +11,8 @@ const isEven = (num) => {
 
 const evenGameRound = () => {
   const num = randomNum(1, 20);
-  const task = num;
   const rightAnswer = (isEven(num)) ? 'yes' : 'no';
-  return [rightAnswer, task];
+  return [rightAnswer, num];
 };
 const startGame = () => generalLogic(evenGameRound, rule);
 export default startGame;
